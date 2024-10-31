@@ -17,7 +17,7 @@ class BalancedBracketsTest {
             "'()}',    False",
             "'){}',    False"
     })
-    void testBalancedBrackets(String input, Boolean expected) {
+    void testIsBalanced(String input, Boolean expected) {
         assertEquals(expected, impl.isBalanced(input));
     }
 
