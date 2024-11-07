@@ -12,6 +12,9 @@ class MergeIntervalsTest {
 
     static Stream<Arguments> intervals() {
         return Stream.of(
+            Arguments.of(new int[][] {},
+                         new int[][] {}),
+
             Arguments.of(new int[][] {{2, 6}},
                          new int[][] {{2, 6}}),
 
@@ -21,7 +24,13 @@ class MergeIntervalsTest {
             Arguments.of(new int[][] {{2, 6}, {5, 9}},
                          new int[][] {{2, 9}}),
 
-            Arguments.of(new int[][] {{2, 6}, {15, 18}, {1, 3}, {6, 10}, {9, 11}}, 
+            Arguments.of(new int[][] {{1, 4}, {2, 3}},
+                         new int[][] {{1, 4}}),
+
+            Arguments.of(new int[][] {{2, 3}, {4, 5}, {6, 7}, {8, 9}, {1, 10}},
+                         new int[][] {{1, 10}}),
+
+            Arguments.of(new int[][] {{2, 6}, {15, 18}, {1, 3}, {6, 11}, {9, 10}}, 
                          new int[][] {{1, 11}, {15, 18}})
         );
     }
