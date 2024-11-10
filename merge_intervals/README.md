@@ -21,6 +21,9 @@ Constraints:
 # Time & Space complexity
 Given `n` is the number of intervals in the inupt array, time complexity is `O(nlogn)` because of
 the sort operation. There is a nested for loop in the implementation which might give the 
-impression that the time complexity is `O(n^2)` but we're actually iterating once through the array.
-Implementation can be improved by using only a single loop but I did not end up doing that. Space
-complexity is `O(n)` because of the auxiliary storage we're using for constructing the result.
+impression that time complexity is `O(n^2)` but we're actually iterating once through the array 
+(the inner loop is always one element behind the outer loop). Implementation can be improved by 
+using only a single loop but I did not end up doing that. Space complexity is `O(n)` because of 
+the auxiliary storage we're using for constructing the result.
+
+Topic: [#Array]()
