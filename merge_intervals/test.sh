@@ -1,5 +1,4 @@
-#!/usr/bin/env bash
-set -e
+#!/bin/bash -e
 cd $(dirname $0)
 
 mkdir -p target

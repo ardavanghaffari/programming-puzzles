@@ -1,5 +1,4 @@
-#!/usr/bin/env bash
-set -e
+#!/bin/bash -e
 cd $(dirname $0)
 
 python3 test_balanced_brackets.py
