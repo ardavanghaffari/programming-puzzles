@@ -38,4 +38,39 @@ class MergeSort {
 
     }
 
+    static class SecondIteration {
+        
+        public void topDown(int[] input) {
+            if (input.length <= 1)
+                return;
+
+            var i = input.length / 2;
+            var l = Arrays.copyOfRange(input, 0, i);
+            var r = Arrays.copyOfRange(input, i, input.length);
+
+            topDown(l);
+            topDown(r);
+            merge(input, l, r);
+        }
+
+        private void merge(int[] merged, int[] left, int[] right) {
+            int i = 0, j = 0, k = 0;
+
+            while (i < left.length && j < right.length) {
+                if (left[i] > right[j])
+                    merged[k++] = right[j++];
+                else if (left[i] < right[j])
+                    merged[k++] = left[i++];
+                else {
+                    merged[k++] = right[j++];
+                    merged[k++] = left[i++];
+                }
+            }
+
+            for ( ; i < left.length; i++)  merged[k++] = left[i];
+            for ( ; j < right.length; j++) merged[k++] = right[j];
+        }
+
+    }
+
 }

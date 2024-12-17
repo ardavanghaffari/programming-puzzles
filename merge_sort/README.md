@@ -16,6 +16,10 @@ Output: [2, 3, 5, 5, 6, 8, 9]
 
 ## Time & Space Complexity
 
+### First Iteration
+
+### Second Iteration
+
 
 </br>
 
