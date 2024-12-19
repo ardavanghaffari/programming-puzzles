@@ -28,8 +28,17 @@ Time complexity is also $O(n\log{(n)})$. Merging the two sorted sub-arrays at ea
 operation that determines the time complexity which takes $O(n)$.
 
 ### Second Iteration
+This implementation is in-place but does not still achieve $O(n)$ space complexity as asked by the
+question. Similar to previous approach, it requires $O(n\log{(n)})$ space but it is actually less
+since it no longer needs $O(n)$ for the merge step. It does however allocate extra space for storing
+the left and right sub-arrays.
 
+Time complexity is $O(n\log{(n)})$ and cannot be improved beyond that. That is because Merge sort is
+an algorithm that sorts by comparing elements and such algorithms are lower bounded by
+$O(n\log{(n)})$.[^1]
 
 </br>
 
 Topic: [#Sorting](), [#Recursion](), [#TopDown]()
+
+[^1]: Competitive Programmer’s Handbook, Antti Laaksonen page 28
