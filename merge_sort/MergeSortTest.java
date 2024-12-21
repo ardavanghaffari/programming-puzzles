@@ -8,7 +8,7 @@ class MergeSortTest {
     private int[] input;
     private int[] expected;
 
-    // Some of the implementations under test, change the input in-place. 
+    // Some of the implementations under test, change the input in-place.
     // Hence initialization in the before hook.
     @BeforeEach
     void setup() {
@@ -25,6 +25,13 @@ class MergeSortTest {
     @Test
     void testSecondIteration() {
         var impl = new MergeSort.SecondIteration();
+        impl.topDown(input);
+        assertArrayEquals(expected, input);
+    }
+
+    @Test
+    void testThirdIteration() {
+        var impl = new MergeSort.ThirdIteration();
         impl.topDown(input);
         assertArrayEquals(expected, input);
     }

@@ -1,11 +1,11 @@
 # Merge Sort
-Write a function that takes in an array of integers and returns a sorted version of that array. 
+Write a function that takes in an array of integers and returns a sorted version of that array.
 Use the Merge Sort algorithm to sort the array.
 
-Your implementation of Merge Sort almost certainly uses a lot of auxiliary space and likely does not 
-sort the input array in place. What is the space complexity of your algorithm? 
+Your implementation of Merge Sort almost certainly uses a lot of auxiliary space and likely does not
+sort the input array in place. What is the space complexity of your algorithm?
 
-Can you implement a version of the algorithm using only one additional array of the same length 
+Can you implement a version of the algorithm using only one additional array of the same length
 as the input array, and can this version sort the input array in place?
 
 Example:
@@ -28,7 +28,7 @@ Time complexity is also $O(n\log{(n)})$. Merging the two sorted sub-arrays at ea
 operation that determines the time complexity which takes $O(n)$.
 
 ### Second Iteration
-This implementation is in-place but does not still achieve $O(n)$ space complexity as asked by the
+This implementation is in-place but does not achieve $O(n)$ space complexity as asked by the
 question. Similar to previous approach, it requires $O(n\log{(n)})$ space but it is actually less
 since it no longer needs $O(n)$ for the merge step. It does however allocate extra space for storing
 the left and right sub-arrays.
@@ -36,6 +36,14 @@ the left and right sub-arrays.
 Time complexity is $O(n\log{(n)})$ and cannot be improved beyond that. That is because Merge sort is
 an algorithm that sorts by comparing elements and such algorithms are lower bounded by
 $O(n\log{(n)})$.[^1]
+
+### Third Iteration
+Here we achieve $O(n)$ space complexity by using only one auxiliary array the size of the input. At
+each merge step, portion of the main array corresponding to the already sorted left and right
+sub-arrays are first copied to the auxiliary array and from there merged back to the main array.
+
+Time complexity remains at $O(n\log{(n)})$. Copying to the auxiliary array prior to merging results
+in an extra $O(n)$ but that doesn't increase the overall time complexity.
 
 </br>
 
