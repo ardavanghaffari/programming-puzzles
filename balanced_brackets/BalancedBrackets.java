@@ -6,8 +6,8 @@ class BalancedBrackets {
 
     private final Deque<Character> stack = new ArrayDeque<>();
     private final Map<Character, Character> bracketMap = Map.of(
-        '(', ')', 
-        '[', ']', 
+        '(', ')',
+        '[', ']',
         '{', '}');
 
     public Boolean isBalanced(String brackets) {

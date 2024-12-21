@@ -1,6 +1,6 @@
 # Merge Intervals
-Given an array of `intervals` where `intervals[i] = [starti, endi]`, merge all overlapping 
-intervals, and return an array of the non-overlapping intervals that cover all the intervals 
+Given an array of `intervals` where `intervals[i] = [starti, endi]`, merge all overlapping
+intervals, and return an array of the non-overlapping intervals that cover all the intervals
 in the input.
 
 Examples:
@@ -22,12 +22,12 @@ Constraints:
 * `0 <= starti <= endi <= 104`
 
 ## Time & Space complexity
-Given $n$ is the number of intervals in the inupt array, time complexity is $O(n\log{(n)})$ 
-because of the sort operation. There is a nested for loop in the implementation which might give 
-the impression that time complexity is $O(n^2)$ but that's not the case since we're actually 
-iterating once through the array. The outer loop is always one element behind the inner loop. 
-The implementation can therefore be improved and made simpler by using only a single loop but 
-I did not end up doing that. 
+Given $n$ is the number of intervals in the inupt array, time complexity is $O(n\log{(n)})$
+because of the sort operation. There is a nested for loop in the implementation which might give
+the impression that time complexity is $O(n^2)$ but that's not the case since we're actually
+iterating once through the array. The outer loop is always one element behind the inner loop.
+The implementation can therefore be improved and made simpler by using only a single loop but
+I did not end up doing that.
 
 Space complexity is $O(n)$ because of the auxiliary storage we're using for constructing and
 returning the result.

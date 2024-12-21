@@ -30,7 +30,7 @@ class MergeIntervalsTest {
             Arguments.of(new int[][] {{2, 3}, {4, 5}, {6, 7}, {8, 9}, {1, 10}},
                          new int[][] {{1, 10}}),
 
-            Arguments.of(new int[][] {{2, 6}, {15, 18}, {1, 3}, {6, 11}, {9, 10}}, 
+            Arguments.of(new int[][] {{2, 6}, {15, 18}, {1, 3}, {6, 11}, {9, 10}},
                          new int[][] {{1, 11}, {15, 18}})
         );
     }
