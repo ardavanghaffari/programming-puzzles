@@ -111,4 +111,40 @@ class MergeSort {
 
     }
 
+    static class FourthIteration {
+
+        public void topDown(int[] input) {
+            helper(input, 0, input.length - 1, Arrays.copyOf(input, input.length));
+        }
+
+        private void helper(int[] main, int start, int end, int[] auxiliary) {
+            if (start == end) return;
+
+            int middle = (start + end) / 2;
+
+            helper(auxiliary, start, middle, main);
+            helper(auxiliary, middle + 1, end, main);
+            merge(main, start, middle, end, auxiliary);
+        }
+
+        private void merge(int[] main, int start, int middle, int end, int[] auxiliary) {
+            int i = start, j = middle + 1, k = start;
+
+            while (i <= middle && j <= end) {
+                if (auxiliary[i] > auxiliary[j])
+                    main[k++] = auxiliary[j++];
+                else if (auxiliary[i] < auxiliary[j])
+                    main[k++] = auxiliary[i++];
+                else {
+                    main[k++] = auxiliary[j++];
+                    main[k++] = auxiliary[i++];
+                }
+            }
+
+            for ( ; i <= middle; i++) main[k++] = auxiliary[i];
+            for ( ; j <= end;    j++) main[k++] = auxiliary[j];
+        }
+
+    }
+
 }

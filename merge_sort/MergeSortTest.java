@@ -35,4 +35,12 @@ class MergeSortTest {
         impl.topDown(input);
         assertArrayEquals(expected, input);
     }
+
+    @Test
+    void testFourthIteration() {
+        var impl = new MergeSort.FourthIteration();
+        impl.topDown(input);
+        assertArrayEquals(expected, input);
+    }
+
 }

@@ -45,8 +45,14 @@ sub-arrays are first copied to the auxiliary array and from there merged back to
 Time complexity remains at $O(n\log{(n)})$. Copying to the auxiliary array prior to merging results
 in an extra $O(n)$ but that doesn't increase the overall time complexity.
 
+### Fourth Iteration
+This implementation is based on the pseudocode on Wikipedia[^2] and is quite clever. Similar to the
+previous approach, it is in-place and has $O(n)$ space complexity. It avoids the copying in the
+merge step by alternating the main and auxiliary references at every other level of recursion.
+
 </br>
 
 Topic: [#Sorting](), [#Recursion](), [#TopDown]()
 
 [^1]: Competitive Programmer’s Handbook, Antti Laaksonen page 28
+[^2]: https://en.wikipedia.org/wiki/Merge_sort
