@@ -8,6 +8,8 @@ export PROJECT_ROOT=$(pwd)
 readarray -d '' tests < <(find . -type f -name 'test.sh' -print0)
 
 for test in "${tests[@]}"; do
+    echo "Running '$test'"
+
     "$test"
 
     if [ $? -ne 0 ]; then
