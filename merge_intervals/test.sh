@@ -1,4 +1,4 @@
 #!/bin/bash -e
 
 cd $(dirname $0)
-source ../run_junit_test.sh MergeIntervals
+source ${PROJECT_ROOT}/run_junit_test.sh MergeIntervals
