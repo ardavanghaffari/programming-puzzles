@@ -8,12 +8,12 @@ export PROJECT_ROOT=$(pwd)
 readarray -d '' tests < <(find . -type f -name 'test.sh' -print0)
 
 for test in "${tests[@]}"; do
-    echo "Running '$test'"
+    echo "Running $test"
 
     "$test"
 
     if [ $? -ne 0 ]; then
-        echo "'$test' failed"
+        echo "$test failed"
         exit 1
     fi
 done
