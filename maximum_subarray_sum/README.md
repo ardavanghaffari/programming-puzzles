@@ -27,4 +27,4 @@ it by starting a new sum/subarray from position <var>i</var>.
 
 </br>
 
-Topic: [#Array](), [#Kadane's Algorithm](), [#Competitive Programmer’s Handbook, Antti Laaksonen]()
+Topic: [#Array](), [#Kadane's Algorithm]()
