@@ -5,8 +5,8 @@ values in the stack. All class methods, when considered independently, should ru
 and with constant space.
 
 ## Time & Space complexity
-When considered independently, both time and space complexity are constant but the implementation
-uses $O(n)$ space as a whole.
+When considered independently, all operations are constant but the implementation uses $O(n)$ space
+as a whole.
 
 </br>
 
