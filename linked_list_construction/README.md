@@ -81,10 +81,10 @@ methods; make sure that the remove() method handles edge cases regarding the hea
 ## Time & Space complexity
 All methods use constant space.
 
-setHead, setTail, insertBefore, insertAfter and remove all run in constant time.
+`set_head`, `set_tail`, `insert_before`, `insert_after` and `remove` all run in constant time.
 
-insertAtPosition, removeNodesWithValue and containsNodeWithValue run in $O(n)$ where n is the
-number of nodes in the linked list
+`insert_at_position`, `remove_nodes_with_values` and `contains_node_with_value` run in worst case
+in $O(n)$ where n is the number of nodes in the linked list.
 
 </br>
 
