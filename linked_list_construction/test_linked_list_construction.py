@@ -6,14 +6,6 @@ from linked_list_construction import Node
 class TestDoublyLinkedList(unittest.TestCase):
     impl = DoublyLinkedList()
 
-    def given_linked_list_is_initialized_with(self, nodes):
-        for p, n in enumerate([Node(n) for n in nodes], start=1):
-            self.impl.insert_at_position(p, n)
-
-    def expect_linked_list_nodes_to_be(self, expected):
-        actual = [n.value for n in self.impl.nodes()]
-        self.assertEqual(actual, expected)
-
     def test_doubly_linked_list(self):
         self.given_linked_list_is_initialized_with([1, 2, 3, 4, 5])
         self.expect_linked_list_nodes_to_be([1, 2, 3, 4, 5])
@@ -47,6 +39,14 @@ class TestDoublyLinkedList(unittest.TestCase):
         self.expect_linked_list_nodes_to_be([4, 1, 5, 6])
 
         self.assertTrue(self.impl.contains_node_with_value(5))
+
+    def given_linked_list_is_initialized_with(self, nodes):
+        for p, n in enumerate([Node(n) for n in nodes], start=1):
+            self.impl.insert_at_position(p, n)
+
+    def expect_linked_list_nodes_to_be(self, expected):
+        actual = [n.value for n in self.impl.nodes()]
+        self.assertEqual(actual, expected)
 
 
 if __name__ == "__main__":
