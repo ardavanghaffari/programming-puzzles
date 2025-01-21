@@ -35,24 +35,23 @@ remove(): -5
 ## Hints
 <details>
 <summary>Hint 1</summary>
-For the `buildHeap()`, `remove()`, and `insert()` methods of the Heap, you will need to use the
-`siftDown()` and `siftUp()` methods. These two methods should essentially allow you to take any
+For the buildHeap(), remove(), and insert() methods of the Heap, you will need to use the
+siftDown() and siftUp() methods. These two methods should essentially allow you to take any
 node in the heap and move it either down or up in the heap until it's in its final, appropriate
 position. This can be done by comparing the node in question to its child nodes in the case of
-`siftDown()` or to its parent node in the case of `siftUp()`.
+siftDown() or to its parent node in the case of siftUp().
 </details>
 
 <details>
 <summary>Hint 2</summary>
 In an array-based Heap, you can easily access a node's children nodes and parent node by using
-the nodes' indices. If a node is located at index `i`, then its children nodes are located at
-indices `2 * i + 1` and `2 * i + 2`, and its parent node is located at index
-`Math.floor((i - 1) / 2)`.
+the nodes' indices. If a node is located at index i, then its children nodes are located at
+indices 2 * i + 1 and 2 * i + 2, and its parent node is located at index Math.floor((i - 1) / 2).
 </details>
 
 <details>
 <summary>Hint 3</summary>
-To implement the `buildHeap()` method, you can either sift every node in the input array down
+To implement the buildHeap() method, you can either sift every node in the input array down
 to its final, correct position, or you can sift every node in the input array up to its final,
 correct position. What are the runtime implications of both approaches?
 </details>
