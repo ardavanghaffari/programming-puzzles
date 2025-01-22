@@ -64,12 +64,13 @@ or sifting all parent nodes down. The sifting up approach results in $O(n\log(n)
 as one would expect but the sifting down approach takes only $O(n)$. Its mathematical proof is
 hard but intuitively speaking, most of the nodes for which we'd be sifting down reside at the lower
 levels of the tree where they're closer to the leaves. Sifting them down takes constant time. There
-are only a few for which we'd get close to $O(\log(n))$ (root is the only one that would actually
-take $\log(n)$ time). So in total, it doesn't become $O(n\log(n))$ but rather converges more
-towards $O(n)$. In the sifting up approach however, it's the majority of the nodes at the bottom
-of the tree where each would take $O(\log(n))$ and so in total it becomes $O(n\log(n))$. In light
-of this, `buildHeap()` takes $O(n)$. `peek()` is constant time and both `insert()` and `remove()`
-are done in $O(\log(n))$.
+are only a few for which we'd get close to $O(\log(n))$. Root is the only one that would actually
+take $\log(n)$ time. So in total, it doesn't become $O(n\log(n))$ but rather converges more
+towards $O(n)$. In the sifting up approach however, the majority of the nodes are at the bottom
+of the tree each taking $O(\log(n))$ which would result in $O(n\log(n))$ time complexity.
+
+In light of this, `buildHeap()` takes $O(n)$. `peek()` is constant time and both `insert()` and
+`remove()` are done in $O(\log(n))$.
 
 </br>
 
