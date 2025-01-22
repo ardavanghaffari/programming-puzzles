@@ -22,7 +22,7 @@ Constraints:
 * `0 <= starti <= endi <= 104`
 
 ## Time & Space complexity
-Given $n$ is the number of intervals in the inupt array, time complexity is $O(n\log{(n)})$
+Given $n$ is the number of intervals in the input array, time complexity is $O(n\log(n))$
 because of the sort operation. There is a nested for loop in the implementation which might give
 the impression that time complexity is $O(n^2)$ but that's not the case since we're actually
 iterating once through the array. The outer loop is always one element behind the inner loop.

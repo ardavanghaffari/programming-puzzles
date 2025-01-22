@@ -22,27 +22,27 @@ indeed use a lot of auxiliary space. The input is halved with each invocation, s
 bottom of the recursion tree in $log(n)$ steps. Each step requires $O(n)$ space for storing the
 left and right sub-arrays plus $O(n)$ for storing the merged result. That is $O(n)$ space
 in total for each level of the recursion tree and there are $log(n)$ levels. Hence a space
-complexity of $O(n\log{(n)})$.
+complexity of $O(n\log(n))$.
 
-Time complexity is also $O(n\log{(n)})$. Merging the two sorted sub-arrays at each level is the only
+Time complexity is also $O(n\log(n))$. Merging the two sorted sub-arrays at each level is the only
 operation that determines the time complexity which takes $O(n)$.
 
 ### Second Iteration
 This implementation is in-place but does not achieve $O(n)$ space complexity as asked by the
-question. Similar to previous approach, it requires $O(n\log{(n)})$ space but it is actually less
+question. Similar to previous approach, it requires $O(n\log(n))$ space but it is actually less
 since it no longer needs $O(n)$ for the merge step. It does however allocate extra space for storing
 the left and right sub-arrays.
 
-Time complexity is $O(n\log{(n)})$ and cannot be improved beyond that. That is because Merge sort is
+Time complexity is $O(n\log(n))$ and cannot be improved beyond that. That is because Merge sort is
 an algorithm that sorts by comparing elements and such algorithms are lower bounded by
-$O(n\log{(n)})$.[^1]
+$O(n\log(n))$.[^1]
 
 ### Third Iteration
 Here we achieve $O(n)$ space complexity by using only one auxiliary array the size of the input. At
 each merge step, portion of the main array corresponding to the already sorted left and right
 sub-arrays are first copied to the auxiliary array and from there merged back to the main array.
 
-Time complexity remains at $O(n\log{(n)})$. Copying to the auxiliary array prior to merging results
+Time complexity remains at $O(n\log(n))$. Copying to the auxiliary array prior to merging results
 in an extra $O(n)$ but that doesn't increase the overall time complexity.
 
 ### Fourth Iteration
