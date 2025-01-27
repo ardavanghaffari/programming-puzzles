@@ -37,8 +37,14 @@ class PowersetTest {
 
     @ParameterizedTest
     @MethodSource("inputAndExpectedOutput")
-    void testPowerset(List<Integer> input, Set<Set<Integer>> expected) {
+    void testRecursive(List<Integer> input, Set<Set<Integer>> expected) {
         assertEquals(expected, impl.recursive(input));
+    }
+
+    @ParameterizedTest
+    @MethodSource("inputAndExpectedOutput")
+    void testBitManipulation(List<Integer> input, Set<Set<Integer>> expected) {
+        assertEquals(expected, impl.bitManipulation(input));
     }
 
 }

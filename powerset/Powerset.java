@@ -25,4 +25,19 @@ class Powerset {
         return copy;
     }
 
+    public Set<Set<Integer>> bitManipulation(List<Integer> input) {
+        var result = new HashSet<Set<Integer>>();
+
+        for (int b = 0; b < (1 << input.size()); b++) {
+            var subset = new HashSet<Integer>();
+
+            for (int i = 0; i < input.size(); i++)
+                if ((b & (1 << i)) > 0) subset.add(input.get(i));
+
+            result.add(subset);
+        }
+
+        return result;
+    }
+
 }

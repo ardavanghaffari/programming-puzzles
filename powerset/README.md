@@ -18,6 +18,16 @@ such as deep copying, use this set which in total results in $O(2^n)$ time compl
 Space Complexity is also $O(n * 2^n)$. We will have $n$ recursive function calls on the call stack,
 each of which requires $O(2^n)$ space to store all of its subsets.
 
+### Bit manipulation solution
+The implementation consists of a nested for loop. For an input with $n$ elements, the outer loop
+executes $2^n$ times, generating all the binary representations from 0 to $2^n - 1$, each
+corresponding to one of the subsets. The inner loop executes $n$ times, iterating through
+all the bits in the binary representation and deciding if the element should be included in
+the subset. This results in a $O(n * 2^n)$ time complexity.
+
+Space complexity is similarly $O(n * 2^n)$ as there are $2^n$ subsets, each containing at most
+$n$ elements.
+
 ## Hints
 <details>
 <summary>Hint 1</summary>
@@ -39,4 +49,4 @@ and disadvantages of using either approach?
 
 </br>
 
-Topic: [#Recursion](), [#Iteration]()
+Topic: [#Complete search](), [#Recursion](), [#Iteration](), [#Bit manipulation]()
