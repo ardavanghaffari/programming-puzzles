@@ -51,6 +51,14 @@ remove(2): 4 <-> 1 <-> 5 <-> 6
 containsNodeWithValue(5): true
 ```
 
+## Time & Space complexity
+All methods use constant space.
+
+`set_head`, `set_tail`, `insert_before`, `insert_after` and `remove` all run in constant time.
+
+`insert_at_position`, `remove_nodes_with_values` and `contains_node_with_value` run in worst case
+in $O(n)$ where n is the number of nodes in the linked list.
+
 ## Hints
 <details>
 <summary>Hint 1</summary>
@@ -77,14 +85,6 @@ Similar to Hint 2, realize that the remove() method can be used to implement the
 removeNodesWithValue() method as well as parts of the insertBefore() and insertAfter()
 methods; make sure that the remove() method handles edge cases regarding the head and the tail.
 </details>
-
-## Time & Space complexity
-All methods use constant space.
-
-`set_head`, `set_tail`, `insert_before`, `insert_after` and `remove` all run in constant time.
-
-`insert_at_position`, `remove_nodes_with_values` and `contains_node_with_value` run in worst case
-in $O(n)$ where n is the number of nodes in the linked list.
 
 </br>
 
