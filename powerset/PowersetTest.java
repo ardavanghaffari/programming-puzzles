@@ -43,6 +43,12 @@ class PowersetTest {
 
     @ParameterizedTest
     @MethodSource("inputAndExpectedOutput")
+    void testIterative(List<Integer> input, Set<Set<Integer>> expected) {
+        assertEquals(expected, impl.iterative(input));
+    }
+
+    @ParameterizedTest
+    @MethodSource("inputAndExpectedOutput")
     void testBitManipulation(List<Integer> input, Set<Set<Integer>> expected) {
         assertEquals(expected, impl.bitManipulation(input));
     }

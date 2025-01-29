@@ -6,23 +6,27 @@ class Powerset {
 
     public Set<Set<Integer>> recursive(List<Integer> input) {
         if (input.isEmpty())
-            return new HashSet<>() {{
-                add(new HashSet<>());
-            }};
+            return emptyPowerset();
 
         var result = recursive(input.subList(1, input.size()));
         var copy   = deepCopy(result);
 
-        copy.forEach(l -> l.add(input.getFirst()));
+        copy.forEach(s -> s.add(input.getFirst()));
 
         result.addAll(copy);
         return result;
     }
 
-    private Set<Set<Integer>> deepCopy(Set<Set<Integer>> set) {
-        var copy = new HashSet<Set<Integer>>();
-        for (var s : set) copy.add(new HashSet<>(s));
-        return copy;
+    public Set<Set<Integer>> iterative(List<Integer> input) {
+        var result = emptyPowerset();
+
+        input.forEach(i -> {
+            var copy = deepCopy(result);
+            copy.forEach(s -> s.add(i));
+            result.addAll(copy);
+        });
+
+        return result;
     }
 
     public Set<Set<Integer>> bitManipulation(List<Integer> input) {
@@ -38,6 +42,18 @@ class Powerset {
         }
 
         return result;
+    }
+
+    private Set<Set<Integer>> deepCopy(Set<Set<Integer>> set) {
+        var copy = new HashSet<Set<Integer>>();
+        for (var s : set) copy.add(new HashSet<>(s));
+        return copy;
+    }
+
+    private Set<Set<Integer>> emptyPowerset() {
+        return new HashSet<>() {{
+            add(new HashSet<>());
+        }};
     }
 
 }

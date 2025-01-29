@@ -18,6 +18,11 @@ such as deep copying, use this set which in total results in $O(2^n)$ time compl
 Space Complexity is also $O(n * 2^n)$. We will have $n$ recursive function calls on the call stack,
 each of which requires $O(2^n)$ space to store all of its subsets.
 
+### Iterative solution
+This is the iterative implementation of the recursive solution. A simple loop suffices and there
+is no need for an explicit stack. Time and space complexity is $O(n * 2^n)$ as we iterate $n$ times
+and each iteration constructs a powerset.
+
 ### Bit manipulation solution
 The implementation consists of a nested for loop. For an input with $n$ elements, the outer loop
 executes $2^n$ times, generating all the binary representations from 0 to $2^n - 1$, each
@@ -31,7 +36,7 @@ $n$ elements.
 ## Hints
 <details>
 <summary>Hint 1</summary>
-Try thinking about the base cases. What is the powerset of the empty set?  What is the powerset
+Try thinking about the base cases. What is the powerset of the empty set? What is the powerset
 of sets of length 1?
 </details>
 
