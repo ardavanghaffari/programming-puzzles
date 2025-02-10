@@ -47,31 +47,6 @@ of the tree each taking $O(\log(n))$ which would result in $O(n\log(n))$ time co
 In light of this, `buildHeap()` takes $O(n)$. `peek()` is constant time and both `insert()` and
 `remove()` are done in $O(\log(n))$.
 
-## Hints
-<details>
-<summary>Hint 1</summary>
-For the buildHeap(), remove(), and insert() methods of the Heap, you will need to use the
-siftDown() and siftUp() methods. These two methods should essentially allow you to take any
-node in the heap and move it either down or up in the heap until it's in its final, appropriate
-position. This can be done by comparing the node in question to its child nodes in the case of
-siftDown() or to its parent node in the case of siftUp().
-</details>
-
-<details>
-<summary>Hint 2</summary>
-In an array-based Heap, you can easily access a node's children nodes and parent node by using
-the nodes' indices. If a node is located at index <var>i</var>, then its children nodes are
-located at indices <code>2 * i + 1</code> and <code>2 * i + 2</code>, and its parent node is
-located at index <code>Math.floor((i - 1) / 2)</code>.
-</details>
-
-<details>
-<summary>Hint 3</summary>
-To implement the buildHeap() method, you can either sift every node in the input array down
-to its final, correct position, or you can sift every node in the input array up to its final,
-correct position. What are the runtime implications of both approaches?
-</details>
-
 </br>
 
 Topic: [#Heap]()
