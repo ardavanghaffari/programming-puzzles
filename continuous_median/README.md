@@ -22,41 +22,22 @@ getMedian(): 10
 ```
 
 ## Time & Space complexity
+We can keep the numbers in a sorted array to enable instant median retrieval. This is however
+unnecessary since we only need to track the two middle numbers. Additionally, maintaining a
+sorted array would result in $O(n)$ insertion time.
+
+We could instead use two Heaps to keep track of two subsets of the numbers. A max-heap for the
+small half and a min-heap for the larger half. This way, we can query the two middle numbers and
+compute the median in instant time by just peeking at the two heaps. With every insert, we pick
+the right heap and possibly also rebalance the heaps to keep their sizes apart by at most one.
+
 I chose to use Python's `heapq` module over implementing a Heap and its operations from scratch
 mainly because I had already done that in the `min_heap_construction` example. Inserting and
 removing from a Heap is a $O(\log(n))$ operation and all our implementation of `insert()` does is
 a series of insertions and removals to and from the min/max heaps. `insert()` has therefore also a
-$O(\log(n))$ time complexity. Space complexity is $O(1)$ as we don't use any extra storage.
+$O(\log(n))$ time complexity.
 
-## Hints
-<details>
-<summary>Hint 1</summary>
-The median of a set of numbers is often, by definition, one of the numbers in the set.
-Thus, you likely have to store all of the inserted numbers somewhere to be able to continuously
-compute their median.
-</details>
-
-<details>
-<summary>Hint 2</summary>
-The median of a set of numbers is either the middle number of that set or the average of the middle
-numbers. This means that if you could somehow keep track of the middle number(s) of the set of
-inserted numbers, you could easily compute the median by finding the indices of the middle numbers
-and doing some simple calculations. Perhaps storing all of the numbers in a sorted array could work,
-but what would be the runtime implication of inserting each new number into a sorted array?
-</details>
-
-<details>
-<summary>Hint 3</summary>
-Realizing that you only need to keep track of the middle numbers in the set of inserted numbers
-to compute the median, try keeping track of two subsets of the numbers: a max-heap of the lower
-half of the numbers and a min-heap of the greater half of the numbers. Any time you insert a number,
-pick the heap to place it in by comparing it to the max / min values of the heaps. Then, re-balance
-the heaps in an effort to keep their sizes apart by at most one. Doing so will allow you to access
-the middle number(s) of the set of inserted numbers very easily, which will make calculating the
-median a trivial computation. Re-balancing the heaps can be accomplished by simply removing a value
-from the larger heap and inserting it in the smaller one. What are the runtime implications of all
-these operations?
-</details>
+Space complexity is $O(n)$ due to the usage of two arrays backing the two heaps.
 
 </br>
 
