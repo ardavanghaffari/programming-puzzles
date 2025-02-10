@@ -37,7 +37,7 @@ class MergeIntervalsTest {
 
     @ParameterizedTest
     @MethodSource("intervals")
-    void testMerege(int[][] input, int[][] expected) {
+    void testMerge(int[][] input, int[][] expected) {
         assertArrayEquals(expected, impl.merge(input));
     }
 
