@@ -33,25 +33,6 @@ the subset. This results in a $O(n * 2^n)$ time complexity.
 Space complexity is similarly $O(n * 2^n)$ as there are $2^n$ subsets, each containing at most
 $n$ elements.
 
-## Hints
-<details>
-<summary>Hint 1</summary>
-Try thinking about the base cases. What is the powerset of the empty set? What is the powerset
-of sets of length 1?
-</details>
-
-<details>
-<summary>Hint 2</summary>
-If you were to take the input set <var>x</var> and add an element to it, how would the resulting
-powerset change?
-</details>
-
-<details>
-<summary>Hint 3</summary>
-Can you solve this problem recursively? Can you solve it iteratively? What are the advantages
-and disadvantages of using either approach?
-</details>
-
 </br>
 
 Topic: [#Complete search](), [#Recursion](), [#Iteration](), [#Bit manipulation]()
