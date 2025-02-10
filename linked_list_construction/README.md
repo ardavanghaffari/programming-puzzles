@@ -59,33 +59,6 @@ All methods use constant space.
 `insert_at_position`, `remove_nodes_with_values` and `contains_node_with_value` run in worst case
 in $O(n)$ where n is the number of nodes in the linked list.
 
-## Hints
-<details>
-<summary>Hint 1</summary>
-When dealing with linked lists, it's very important to keep track of pointers on nodes
-(i.e., the "next" and "prev" properties on the nodes). For instance, if you're inserting
-a node in a linked list, but that node is already located somewhere else in the linked list
-(in other words, if you're moving a node), it's crucial to completely update the pointers
-of the adjacent nodes of the node being moved before updating the node's own pointers.
-The order in which you update nodes' pointers will make or break your algorithm.
-</details>
-
-<details>
-<summary>Hint 2</summary>
-Realize that the insertBefore() and insertAfter() methods can be used to implement the
-setHead(), setTail(), and insertAtPosition() methods; making the insertBefore() and insertAfter()
-methods as robust as possible will simplify your code for the other methods. Make sure to take care
-of edge cases involving inserting nodes before the head of the linked list or inserting nodes after
-the tail of the linked list.
-</details>
-
-<details>
-<summary>Hint 3</summary>
-Similar to Hint 2, realize that the remove() method can be used to implement the
-removeNodesWithValue() method as well as parts of the insertBefore() and insertAfter()
-methods; make sure that the remove() method handles edge cases regarding the head and the tail.
-</details>
-
 </br>
 
 Topic: [#Linked List]()
