@@ -8,10 +8,12 @@
         "--disable=missing-function-docstring",
         "--max-line-length=100"
     ],
-    "cSpell.userWords": [
+    "cSpell.words": [
         "Kadane",
         "powerset",
         "Subarray",
-        "heapq"
+        "heapq",
+        "javac",
+        "Xdiags"
     ]
 }
