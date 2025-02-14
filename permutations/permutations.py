@@ -32,7 +32,7 @@ def backtracking(numbers):
     def swap(i, j):
         numbers[i], numbers[j] = numbers[j], numbers[i]
 
-    def backtrack(first=0):
+    def recurse(first=0):
         # We've generated a permutation, add it to the result
         if first == len(numbers):
             result.append(numbers[:])
@@ -40,9 +40,9 @@ def backtracking(numbers):
 
         for i in range(first, len(numbers)):
             swap(first, i) # Fix the first element
-            backtrack(first + 1) # Recurse on the subarray
+            recurse(first + 1) # Recurse on the subarray
             swap(first, i) # Backtrack
 
     result = []
-    backtrack()
+    recurse()
     return result
