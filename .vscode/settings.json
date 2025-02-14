@@ -1,0 +1,17 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/*.jar"
+    ],
+    "pylint.args": [
+        "--disable=missing-module-docstring",
+        "--disable=missing-class-docstring",
+        "--disable=missing-function-docstring",
+        "--max-line-length=100"
+    ],
+    "cSpell.userWords": [
+        "Kadane",
+        "powerset",
+        "Subarray",
+        "heapq"
+    ]
+}
