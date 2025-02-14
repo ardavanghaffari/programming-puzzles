@@ -15,7 +15,7 @@ params = [
 class TestBalancedBrackets(unittest.TestCase):
     def test_is_balanced(self):
         for brackets, expected in params:
-            with self.subTest(brackets):
+            with self.subTest(brackets=brackets, expected=expected):
                 self.assertEqual(is_balanced(brackets), expected)
 
 

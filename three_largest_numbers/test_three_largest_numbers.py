@@ -7,10 +7,10 @@ params = [
 ]
 
 
-class TestBalancedBrackets(unittest.TestCase):
+class TestThreeLargestNumbers(unittest.TestCase):
     def test_three_largest_numbers(self):
         for numbers, expected in params:
-            with self.subTest(numbers):
+            with self.subTest(numbers=numbers, expected=expected):
                 self.assertEqual(three_largest_numbers(numbers), expected)
 
 
