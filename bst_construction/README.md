@@ -44,9 +44,11 @@ contains(15): true
 ```
 
 ## Time & Space Complexity
-For a tree with $n$ nodes, average time complexity of all three methods is $O(\log(n))$. That
-happens when the tree is balanced. Since we'd be eliminating half of the nodes at each level when
-traversing the tree. In the worst case, $O(n)$ if the tree is skewed to one side.
+For a tree with $n$ nodes, an average time complexity of $O(\log(n))$ is achieved for all three
+methods when the tree is balanced. That's due to the BST property which allows for eliminating
+roughly half of the nodes at each level when traversing the tree. So we'll reach the leaves after
+$\log(n)$ steps. If the tree is skewed however to one side, we'll end up with a worst case time
+complexity of $O(n)$.
 
 </br>
 
