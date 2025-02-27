@@ -11,7 +11,7 @@ class TestDoublyLinkedList(unittest.TestCase):
         self.expect_linked_list_nodes_to_be([1, 2, 3, 4, 5])
 
         # Set the existing node with value 4 as the head
-        self.impl.set_head(self.impl.nodes()[3])
+        self.impl.set_head(self.nodes()[3])
         self.expect_linked_list_nodes_to_be([4, 1, 2, 3, 5])
 
         # Set the stand-alone node with value 6 as the tail
@@ -19,11 +19,11 @@ class TestDoublyLinkedList(unittest.TestCase):
         self.expect_linked_list_nodes_to_be([4, 1, 2, 3, 5, 6])
 
         # Move the existing node with value 3 before the existing node with value 6
-        self.impl.insert_before(self.impl.nodes()[5], self.impl.nodes()[3])
+        self.impl.insert_before(self.nodes()[5], self.nodes()[3])
         self.expect_linked_list_nodes_to_be([4, 1, 2, 5, 3, 6])
 
         # Insert a stand-alone node with value 3 after the existing node with value 6
-        self.impl.insert_after(self.impl.nodes()[5], Node(3))
+        self.impl.insert_after(self.nodes()[5], Node(3))
         self.expect_linked_list_nodes_to_be([4, 1, 2, 5, 3, 6, 3])
 
         # Insert a stand-alone node with value 3 in position 1
@@ -35,17 +35,25 @@ class TestDoublyLinkedList(unittest.TestCase):
         self.expect_linked_list_nodes_to_be([4, 1, 2, 5, 6])
 
         # Remove the existing node with value 2
-        self.impl.remove(self.impl.nodes()[2])
+        self.impl.remove(self.nodes()[2])
         self.expect_linked_list_nodes_to_be([4, 1, 5, 6])
 
         self.assertTrue(self.impl.contains_node_with_value(5))
+
+    def nodes(self):
+        nodes = []
+        node = self.impl.head
+        while node:
+            nodes.append(node)
+            node = node.next
+        return nodes
 
     def given_linked_list_is_initialized_with(self, nodes):
         for p, n in enumerate([Node(n) for n in nodes], start=1):
             self.impl.insert_at_position(p, n)
 
     def expect_linked_list_nodes_to_be(self, expected):
-        actual = [n.value for n in self.impl.nodes()]
+        actual = [n.value for n in self.nodes()]
         self.assertEqual(actual, expected)
 
 

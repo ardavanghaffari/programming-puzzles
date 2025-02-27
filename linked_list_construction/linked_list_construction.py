@@ -98,12 +98,3 @@ class DoublyLinkedList:
 
     def contains_node(self, node):
         return node.next is not None and node.prev is not None
-
-    # Only for testing
-    def nodes(self):
-        nodes = []
-        node = self.head
-        while node:
-            nodes.append(node)
-            node = node.next
-        return nodes
