@@ -114,17 +114,3 @@ class Bst:
 
     def has_two_children(self):
         return self.left is not None and self.right is not None
-
-    # Used only for testing
-    def in_order_traversal(self):
-        result = []
-
-        def traverse(node):
-            if not node:
-                return
-            traverse(node.left)
-            result.append(node.value)
-            traverse(node.right)
-
-        traverse(self)
-        return result

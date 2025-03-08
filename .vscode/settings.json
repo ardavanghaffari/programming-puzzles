@@ -8,12 +8,19 @@
         "--disable=missing-function-docstring",
         "--max-line-length=100"
     ],
+    "python.analysis.extraPaths": [
+        "common"
+    ],
+    "terminal.integrated.env.linux": {
+        "PYTHONPATH": "common"
+    },
     "cSpell.words": [
-        "Kadane",
-        "powerset",
-        "Subarray",
         "heapq",
         "javac",
+        "Kadane",
+        "powerset",
+        "PYTHONPATH",
+        "Subarray",
         "Xdiags"
     ]
 }
