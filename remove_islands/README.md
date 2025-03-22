@@ -39,4 +39,4 @@ $O(r * c)$.
 
 </br>
 
-Topic: [#Graphs]()
+Topic: [#Graph]()

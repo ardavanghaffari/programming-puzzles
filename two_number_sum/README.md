@@ -19,4 +19,4 @@ Given an array of $n$ numbers, time and space complexity of the three solutions 
 
 </br>
 
-Topic: [#Arrays]()
+Topic: [#Array]()

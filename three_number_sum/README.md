@@ -18,4 +18,4 @@ worst case, that is when all numbers contribute to unique triplets.
 
 </br>
 
-Topic: [#Arrays]()
+Topic: [#Array]()
