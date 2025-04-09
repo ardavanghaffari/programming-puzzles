@@ -2,13 +2,13 @@ import unittest
 from balanced_brackets import is_balanced
 
 params = [
-    ("()", True),
+    ("()",     True),
     ("()[]{}", True),
-    ("([])", True),
-    ("(]", False),
-    ("(){", False),
-    ("()}", False),
-    ("){}", False),
+    ("([])",   True),
+    ("(]",     False),
+    ("(){",    False),
+    ("()}",    False),
+    ("){}",    False),
 ]
 
 

@@ -23,7 +23,7 @@ Output: false
 
 ## Time & Space complexity
 Given $n$ is the length of the input string, time complexity is $O(n)$ since we iterate through the
-characters in the string in the for loop. Space complexity is also $O(n)$ since at it's worst case,
+characters in the string in the for loop. Space complexity is also $O(n)$ since at its worst case,
 we'll have all the characters on the stack. For example in case of a string containing only opening
 brackets.
 

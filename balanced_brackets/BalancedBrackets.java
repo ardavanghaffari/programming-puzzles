@@ -24,4 +24,5 @@ class BalancedBrackets {
     private Boolean isOpeningBracket(Character chr) {
         return bracketMap.containsKey(chr) ? true : false;
     }
+
 }

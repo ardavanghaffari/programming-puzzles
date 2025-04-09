@@ -10,7 +10,7 @@ def is_balanced(brackets):
             if not stack or stack.pop() != match[b]:
                 return False
 
-    if not stack:
-        return True
-    else:
+    if stack:
         return False
+
+    return True
