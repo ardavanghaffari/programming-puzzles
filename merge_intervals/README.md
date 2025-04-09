@@ -1,7 +1,6 @@
 # Merge Intervals
-Given an array of `intervals` where `intervals[i] = [starti, endi]`, merge all overlapping
-intervals, and return an array of the non-overlapping intervals that cover all the intervals
-in the input.
+Given an array of intervals, merge all overlapping intervals, and return an array of the
+non-overlapping intervals that cover all the intervals in the input.
 
 Examples:
 ```
@@ -15,11 +14,6 @@ Input: [[1,4],[4,5]]
 Output: [[1,5]]
 ```
 Intervals [1,4] and [4,5] are considered overlapping.
-
-Constraints:
-* `1 <= intervals.length <= 104`
-* `intervals[i].length == 2`
-* `0 <= starti <= endi <= 104`
 
 ## Time & Space complexity
 Given $n$ is the number of intervals in the input array, time complexity is $O(n\log(n))$

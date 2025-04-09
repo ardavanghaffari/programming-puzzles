@@ -49,10 +49,6 @@ class MergeIntervals {
      *
      * Arrays.sort(intervals, Comparator.comparingInt((int[] i) -> i[0]).thenComparing(i -> i[1]));
      *
-     * Sources:
-     * https://stackoverflow.com/questions/24932177/type-witness-in-java-generics
-     * https://stackoverflow.com/questions/25172595/comparator-reversed-does-not-compile-using-lambda
-     *
      * None of this is needed since we can just use Array's compare method that compares two int[].
      */
     private void sort(int[][] intervals) {
