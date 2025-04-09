@@ -27,7 +27,7 @@ unnecessary since we only need to track the two middle numbers. Additionally, ma
 sorted array would result in $O(n)$ insertion time.
 
 We could instead use two Heaps to keep track of two subsets of the numbers. A max-heap for the
-small half and a min-heap for the larger half. This way, we can query the two middle numbers and
+smaller half and a min-heap for the larger half. This way, we can query the two middle numbers and
 compute the median in instant time by just peeking at the two heaps. With every insert, we pick
 the right heap and possibly also rebalance the heaps to keep their sizes apart by at most one.
 
