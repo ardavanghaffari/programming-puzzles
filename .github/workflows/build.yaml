@@ -1,4 +1,4 @@
-name: Build on PR Merge and Manual Trigger
+name: Tests
 
 on:
   pull_request:
@@ -23,7 +23,7 @@ jobs:
       - name: Set Up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
+          python-version: '3.12'
 
       - name: Run tests
         run: ./test_all.sh
