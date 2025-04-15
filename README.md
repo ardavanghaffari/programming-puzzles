@@ -1,2 +1,3 @@
 # programming-puzzles
-Programming puzzles to keep my problem solving skills sharp
+
+![Tests](https://github.com/ardavanghaffari/programming-puzzles/actions/workflows/build.yaml)
