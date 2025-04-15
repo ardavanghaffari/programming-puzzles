@@ -21,6 +21,7 @@
         "powerset",
         "PYTHONPATH",
         "Subarray",
+        "temurin",
         "Xdiags"
     ]
 }
