@@ -1,3 +1,3 @@
 # programming-puzzles
 
-![Tests](https://github.com/ardavanghaffari/programming-puzzles/actions/workflows/build.yaml/badge.svg)
+[![Tests](https://github.com/ardavanghaffari/programming-puzzles/actions/workflows/build.yaml/badge.svg)](https://github.com/ardavanghaffari/programming-puzzles/actions/workflows/build.yaml)
