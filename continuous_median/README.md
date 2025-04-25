@@ -1,8 +1,9 @@
 # Continuous Median
+
 Write a ContinuousMedian class that supports:
 
-* The continuous insertion of numbers with the insert method.
-* The instant retrieval of the median of the numbers that have been inserted thus far with the
+- The continuous insertion of numbers with the insert method.
+- The instant retrieval of the median of the numbers that have been inserted thus far with the
   getMedian method.
 
 The median of a set of numbers is the "middle" number when the numbers are ordered from smallest
@@ -12,6 +13,7 @@ number in the middle (3 in this case); if there's an even number of numbers in t
 case).
 
 Example usage:
+
 ```
 ContinuousMedian(): - // instantiate a ContinuousMedian
 insert(5): -
@@ -22,6 +24,7 @@ getMedian(): 10
 ```
 
 ## Time & Space complexity
+
 We can keep the numbers in a sorted array to enable instant median retrieval. This is however
 unnecessary since we only need to track the two middle numbers. Additionally, maintaining a
 sorted array would result in $O(n)$ insertion time.

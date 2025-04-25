@@ -1,4 +1,5 @@
 # Valid IP Addresses
+
 You're given a string of length 12 or smaller, containing only digits. Write a function that
 returns all the possible IP addresses that can be created by inserting three `.`s in the string.
 
@@ -11,6 +12,7 @@ contain `00` and `01`, respectively. Another example of a valid IP address is `9
 conversely, `991.1.1.0` isn't valid, because 991 is greater than 255.
 
 Example:
+
 ```
 input = "1921680"
 expected output =
@@ -30,6 +32,7 @@ expected output =
 ```
 
 ## Time & Space Complexity
+
 The implementation runs in constant time and space since the input string is itself constant
 (12 or less).
 

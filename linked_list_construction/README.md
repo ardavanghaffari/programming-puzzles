@@ -1,12 +1,13 @@
 # Linked List Construction
+
 Write a DoublyLinkedList class that has a head and a tail, both of which point to either a
 linked list node or None / null. The class should support:
 
-* Setting the head and tail of the linked list.
-* Inserting nodes before and after other nodes as well as at given positions
+- Setting the head and tail of the linked list.
+- Inserting nodes before and after other nodes as well as at given positions
   (the position of the head node is 1).
-* Removing given nodes and removing nodes with given values.
-* Searching for nodes with given values.
+- Removing given nodes and removing nodes with given values.
+- Searching for nodes with given values.
 
 Note that the setHead, setTail, insertBefore, insertAfter, insertAtPosition, and remove methods
 all take in actual nodes as input parameters - not integers (except for insertAtPosition, which
@@ -20,6 +21,7 @@ Each node has an integer value as well as a prev node and a next node, both of w
 either another node or None / null.
 
 Example usage:
+
 ```
 Assume the following linked list has already been created:
 1 <-> 2 <-> 3 <-> 4 <-> 5
@@ -52,6 +54,7 @@ containsNodeWithValue(5): true
 ```
 
 ## Time & Space complexity
+
 All methods use constant space.
 
 `set_head`, `set_tail`, `insert_before`, `insert_after` and `remove` all run in constant time.

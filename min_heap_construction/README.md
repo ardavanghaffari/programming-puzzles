@@ -1,15 +1,17 @@
 # Min Heap Construction
+
 Implement a MinHeap class that supports:
 
-* Building a Min Heap from an input array of integers.
-* Inserting integers in the heap.
-* Removing the heap's minimum / root value.
-* Peeking at the heap's minimum / root value.
-* Sifting integers up and down the heap, which is to be used when inserting and removing values.
+- Building a Min Heap from an input array of integers.
+- Inserting integers in the heap.
+- Removing the heap's minimum / root value.
+- Peeking at the heap's minimum / root value.
+- Sifting integers up and down the heap, which is to be used when inserting and removing values.
 
 Note that the heap should be represented in the form of an array.
 
 Example usage:
+
 ```
 array = [48, 12, 24, 7, 8, -5, 24, 391, 24, 56, 2, 6, 8, 41]
 
@@ -33,6 +35,7 @@ remove(): -5
 ```
 
 ## Time & Space complexity
+
 Given $n$ is the size of the heap, sifting each node up or down takes $O(\log(n))$ since we'd be
 eliminating half of the nodes at each step. The heap can be built by either sifting all nodes up
 or sifting all parent nodes down. The sifting up approach results in $O(n\log(n))$ time complexity

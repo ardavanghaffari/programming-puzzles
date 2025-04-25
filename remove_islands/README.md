@@ -1,4 +1,5 @@
 # Remove Islands
+
 You're given a two-dimensional array (a matrix) of potentially unequal height and width containing
 only `0`s and `1`s. The matrix represents a two-toned image, where each `1` represents black and
 each `0` represents white. An island is defined as any number of `1`s that are horizontally or
@@ -11,6 +12,7 @@ Write a function that returns a modified version of the input matrix, where all 
 removed. You remove an island by replacing it with `0`s.
 
 Example:
+
 ```
 input
 [
@@ -34,6 +36,7 @@ expected output
 ```
 
 ## Time & Space Complexity
+
 Given a matrix with <var>r</var> rows and <var>c</var> columns, both time and space complexity is
 $O(r * c)$.
 

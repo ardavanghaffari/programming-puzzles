@@ -1,10 +1,12 @@
 # Min Height BST
+
 Write a function that takes in a non-empty sorted array of distinct integers, constructs a BST
 from the integers, and returns the root of the BST.
 
 The function should minimize the height of the BST.
 
 Example usage:
+
 ```
 array = [1, 2, 5, 7, 10, 13, 14, 15, 22]
 
@@ -29,6 +31,7 @@ array = [1, 2, 5, 7, 10, 13, 14, 15, 22]
 ```
 
 ## Time & Space Complexity
+
 Constructing a BST with $n$ nodes requires $O(n)$ time and space.
 
 </br>

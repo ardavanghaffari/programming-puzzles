@@ -37,9 +37,10 @@ There are only two types of tasks, A and B, which need to be separated by 3 inte
 to idling twice between repetitions of these tasks.
 
 Constraints:
-* <code>1 <= tasks.length <= 10<sup>4</sup></code>
-* `tasks[i]` is an uppercase English letter.
-* `0 <= n <= 100`
+
+- <code>1 <= tasks.length <= 10<sup>4</sup></code>
+- `tasks[i]` is an uppercase English letter.
+- `0 <= n <= 100`
 
 ## Time & Space Complexity
 

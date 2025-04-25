@@ -1,10 +1,11 @@
 # BST Construction
+
 Write a BST class for a Binary Search Tree. The class should support:
 
-* Inserting values with the insert method.
-* Removing values with the remove method; this method should only remove the first instance
+- Inserting values with the insert method.
+- Removing values with the remove method; this method should only remove the first instance
   of a given value.
-* Searching for values with the contains method.
+- Searching for values with the contains method.
 
 Note that you can't remove values from a single-node tree. In other words, calling the remove
 method on a single-node tree should simply not do anything.
@@ -15,6 +16,7 @@ than the values of every node to its left; its value is less than or equal to th
 node to its right; and its children nodes are either valid BST nodes themselves or None / null.
 
 Example usage:
+
 ```
          10
        /     \
@@ -44,6 +46,7 @@ contains(15): true
 ```
 
 ## Time & Space Complexity
+
 For a tree with $n$ nodes, an average time complexity of $O(\log(n))$ is achieved for all three
 methods when the tree is balanced. That's due to the BST property which allows for eliminating
 roughly half of the nodes at each level when traversing the tree. So we'll reach the leaves after
