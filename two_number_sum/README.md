@@ -19,7 +19,7 @@ Given an array of $n$ numbers, time and space complexity of the three solutions 
 
 - Brute force: $O(n^2)$ time and $O(1)$ space.
 - Hash table: $O(n)$ time and space.
-- Two pointer: $O(n\log(n))$ time and $O(1)$ space
+- Two pointer: $O(n\log{n})$ time and $O(1)$ space
 
 </br>
 

@@ -46,7 +46,7 @@ Constraints:
 
 Given $n$ is the number of tasks, the implementation runs in $O(n)$ time and requires no extra
 space. While the use of a priority queue and two auxiliary hash maps might suggest complexities of
-$O(n\log(n))$ and $O(n)$ respectively, the actual complexity remains linear. This is because the
+$O(n\log{n})$ and $O(n)$ respectively, the actual complexity remains linear. This is because the
 number of unique tasks is limited to 26 English letters which is a constant factor and can be
 ignored in the estimation.
 

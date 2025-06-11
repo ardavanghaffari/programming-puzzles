@@ -36,9 +36,9 @@ the right heap and possibly also rebalance the heaps to keep their sizes apart b
 
 I chose to use Python's `heapq` module over implementing a Heap and its operations from scratch
 mainly because I had already done that in the `min_heap_construction` example. Inserting and
-removing from a Heap is a $O(\log(n))$ operation and all our implementation of `insert()` does is
+removing from a Heap is a $O(\log{n})$ operation and all our implementation of `insert()` does is
 a series of insertions and removals to and from the min/max heaps. `insert()` has therefore also a
-$O(\log(n))$ time complexity.
+$O(\log{n})$ time complexity.
 
 Space complexity is $O(n)$ due to the usage of two arrays backing the two heaps.
 
