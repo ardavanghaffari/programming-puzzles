@@ -50,6 +50,6 @@ of the tree each taking $O(\log{n})$ which would result in $O(n\log{n})$ time co
 In light of this, `buildHeap()` takes $O(n)$. `peek()` is constant time and both `insert()` and
 `remove()` are done in $O(\log{n})$.
 
-</br>
+<br>
 
 Topic: [#Heap]()

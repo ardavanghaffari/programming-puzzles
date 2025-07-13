@@ -56,7 +56,7 @@ This implementation is based on the pseudocode on Wikipedia[^2] and is quite cle
 previous approach, it is in-place and has $O(n)$ space complexity. It avoids the copying in the
 merge step by alternating the main and auxiliary references at every other level of recursion.
 
-</br>
+<br>
 
 Topic: [#Sorting](), [#Recursion](), [#TopDown]()
 

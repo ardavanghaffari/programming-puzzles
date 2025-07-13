@@ -16,6 +16,6 @@ Output: [18, 141, 541]
 
 $O(n)$ time and $O(1)$ space for an input with <var>n</var> elements.
 
-</br>
+<br>
 
 Topic: [#Array](), [#Searching]()

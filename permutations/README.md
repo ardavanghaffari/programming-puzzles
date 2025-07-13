@@ -18,6 +18,6 @@ $O(n * n!)$. Intuitively speaking, the recursive solution uses more space though
 copies of partial permutations and modifies them. The backtracking solution sticks to the original
 list by swapping elements back and forth as it moves up and down the recursion tree.
 
-</br>
+<br>
 
 Topic: [#Complete search](), [#Recursion](), [#Backtracking]()

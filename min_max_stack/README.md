@@ -10,6 +10,6 @@ and with constant space.
 When considered independently, all operations are constant but the implementation uses $O(n)$ space
 as a whole.
 
-</br>
+<br>
 
 Topic: [#Stack]()

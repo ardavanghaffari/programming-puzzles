@@ -42,6 +42,6 @@ $O(\log{n})$ time complexity.
 
 Space complexity is $O(n)$ due to the usage of two arrays backing the two heaps.
 
-</br>
+<br>
 
 Topic: [#Heap]()

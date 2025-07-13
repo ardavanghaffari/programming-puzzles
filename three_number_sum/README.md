@@ -19,6 +19,6 @@ Output: [[-8, 2, 6], [-8, 3, 5], [-6, 1, 5]]
 Given an array of $n$ numbers, time complexity is $O(n^2)$ and space complexity is $O(n)$ at its
 worst case, that is when all numbers contribute to unique triplets.
 
-</br>
+<br>
 
 Topic: [#Array]()

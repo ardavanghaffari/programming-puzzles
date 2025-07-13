@@ -29,6 +29,6 @@ leading to <var>i</var> is improving the overall result or not. If it turns out 
 greater on its own, that means the leading subarray is reducing the overall result and so we ditch
 it by starting a new sum/subarray from position <var>i</var>.
 
-</br>
+<br>
 
 Topic: [#Array](), [#Kadane's Algorithm]()

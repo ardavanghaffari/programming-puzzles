@@ -50,6 +50,6 @@ $O(n\log{n})$ and $O(n)$ respectively, the actual complexity remains linear. Thi
 number of unique tasks is limited to 26 English letters which is a constant factor and can be
 ignored in the estimation.
 
-</br>
+<br>
 
 Topic: [#Array](), [#Hash Table](), [#Greedy](), [#Sorting](), [#Heap](), [#Counting]()

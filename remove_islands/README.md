@@ -40,6 +40,6 @@ expected output
 Given a matrix with <var>r</var> rows and <var>c</var> columns, both time and space complexity is
 $O(r * c)$.
 
-</br>
+<br>
 
 Topic: [#Graph]()

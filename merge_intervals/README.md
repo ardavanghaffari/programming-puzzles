@@ -31,6 +31,6 @@ I did not end up doing that.
 Space complexity is $O(n)$ because of the auxiliary storage we're using for constructing and
 returning the result.
 
-</br>
+<br>
 
 Topic: [#Array]()

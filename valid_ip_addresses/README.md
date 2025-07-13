@@ -36,6 +36,6 @@ expected output =
 The implementation runs in constant time and space since the input string is itself constant
 (12 or less).
 
-</br>
+<br>
 
 Topic: [#String](), [#Recursion]()

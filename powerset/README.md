@@ -37,6 +37,6 @@ the subset. This results in a $O(n * 2^n)$ time complexity.
 Space complexity is similarly $O(n * 2^n)$ as there are $2^n$ subsets, each containing at most
 $n$ elements.
 
-</br>
+<br>
 
 Topic: [#Complete search](), [#Recursion](), [#Iteration](), [#Bit manipulation]()

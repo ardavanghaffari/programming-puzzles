@@ -53,6 +53,6 @@ roughly half of the nodes at each level when traversing the tree. So we'll reach
 $\log{n}$ steps. If the tree is skewed however to one side, we'll end up with a worst case time
 complexity of $O(n)$.
 
-</br>
+<br>
 
 Topic: [#Tree](), [#Binary search tree]()

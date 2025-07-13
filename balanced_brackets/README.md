@@ -30,6 +30,6 @@ characters in the string in the for loop. Space complexity is also $O(n)$ since 
 we'll have all the characters on the stack. For example in case of a string containing only opening
 brackets.
 
-</br>
+<br>
 
 Topic: [#Stack]()

@@ -62,6 +62,6 @@ All methods use constant space.
 `insert_at_position`, `remove_nodes_with_values` and `contains_node_with_value` run in worst case
 in $O(n)$ where n is the number of nodes in the linked list.
 
-</br>
+<br>
 
 Topic: [#Linked List]()

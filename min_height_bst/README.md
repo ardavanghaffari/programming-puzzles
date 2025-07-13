@@ -34,6 +34,6 @@ array = [1, 2, 5, 7, 10, 13, 14, 15, 22]
 
 Constructing a BST with $n$ nodes requires $O(n)$ time and space.
 
-</br>
+<br>
 
 Topic: [#Tree](), [#Binary search tree]()
