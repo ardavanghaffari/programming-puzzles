@@ -1,2 +1,6 @@
 __pycache__
 target
+
+# IntelliJ IDEA
+.idea/
+*.iml
