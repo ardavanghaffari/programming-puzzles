@@ -36,7 +36,7 @@ class HistorianHysteria {
                 .reduce(0L, Long::sum);
     }
 
-    private static record P(List<Integer> leftList, List<Integer> rightList) {}
+    private record P(List<Integer> leftList, List<Integer> rightList) {}
 
     private P parse(List<String> lines) {
         var left  = new ArrayList<Integer>();

@@ -9,7 +9,7 @@ class MinHeapConstruction {
     }
 
     public int peek() {
-        return heap.get(0);
+        return heap.getFirst();
     }
 
     public void insert(int value) {
@@ -18,9 +18,9 @@ class MinHeapConstruction {
     }
 
     public int remove() {
-        int root = heap.get(0);
+        int root = heap.getFirst();
 
-        heap.set(0, heap.remove(heap.size() - 1));
+        heap.set(0, heap.removeLast());
         siftDown(0, heap);
 
         return root;

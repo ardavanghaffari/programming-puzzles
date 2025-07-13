@@ -7,8 +7,10 @@ import java.util.stream.Stream;
 
 class RedNosedReports {
 
-    private static final BiPredicate<Integer, Integer> INCREASING = (i, j) -> -3 <= i - j && i - j <= -1;
-    private static final BiPredicate<Integer, Integer> DECREASING = (i, j) -> 1 <= i - j && i - j <= 3;
+    private static final BiPredicate<Integer, Integer> INCREASING =
+            (i, j) -> -3 <= i - j && i - j <= -1;
+    private static final BiPredicate<Integer, Integer> DECREASING =
+            (i, j) -> 1 <= i - j && i - j <= 3;
 
     public long numberOfSafeReports() {
         return parse(input()).stream()
@@ -48,7 +50,7 @@ class RedNosedReports {
     }
 
     private boolean isSafeToleratingSingleBadLevel(List<Integer> report,
-            BiPredicate<Integer, Integer> predicate) {
+                                                   BiPredicate<Integer, Integer> predicate) {
 
         int i = 0;
         int skips = 0;

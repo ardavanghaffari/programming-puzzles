@@ -27,8 +27,8 @@ class MaximumSubarraySum {
         int max = Integer.MIN_VALUE;
         int sum = 0;
 
-        for (int i = 0; i < input.length; i++) {
-            sum = max(input[i], input[i] + sum);
+        for (int i : input) {
+            sum = max(i, i + sum);
             max = max(max, sum);
         }
 

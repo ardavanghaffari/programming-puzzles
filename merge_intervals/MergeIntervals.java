@@ -31,13 +31,13 @@ class MergeIntervals {
 
     /**
      * This is what I originally came up with
-     *
+     * <p>
      * Arrays.sort(intervals, Comparator.<int[]>comparingInt(i -> i[0]).thenComparing(i -> i[1]));
-     *
+     * <p>
      * A note about <int[]>. This is what's referred to as 'Type witness'. It's meant
      * to help the compiler with type inference. It's needed here since we'd otherwise
      * get a compilation error:
-     *
+     * <p>
      * MergeIntervals.java:32: error: array required, but Object found
      *         Arrays.sort(intervals, Comparator.comparingInt(i -> i[0]).thenComparing(i -> i[1]));
      *                                                              ^
@@ -46,9 +46,9 @@ class MergeIntervals {
      *                                                                                       ^
      * Compiler is failing to infer that i is an int[] and falls back to Object. Adding <int[]>
      * helps with that. Another way to help the compiler would be:
-     *
+     * <p>
      * Arrays.sort(intervals, Comparator.comparingInt((int[] i) -> i[0]).thenComparing(i -> i[1]));
-     *
+     * <p>
      * None of this is needed since we can just use Array's compare method that compares two int[].
      */
     private void sort(int[][] intervals) {

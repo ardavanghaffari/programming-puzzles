@@ -1,15 +1,15 @@
-import static org.junit.Assert.assertEquals;
+import org.junit.jupiter.api.Test;
 
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class MinHeapConstructionTest {
 
     private List<Integer> input = IntStream.of(
-            48, 12, 24, 7, 8, -5, 24, 391, 24, 56, 2, 6, 8, 41)
+                    48, 12, 24, 7, 8, -5, 24, 391, 24, 56, 2, 6, 8, 41)
             .boxed()
             .collect(Collectors.toList());
 

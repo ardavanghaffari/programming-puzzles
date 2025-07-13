@@ -14,9 +14,7 @@ class TaskScheduler {
         for (char t : tasks)
             frequencies.put(t, frequencies.getOrDefault(t, 0) + 1);
 
-        frequencies.values()
-                .stream()
-                .forEach(queue::add);
+        queue.addAll(frequencies.values());
 
         var idles = 0;
         var currentInterval = 1;

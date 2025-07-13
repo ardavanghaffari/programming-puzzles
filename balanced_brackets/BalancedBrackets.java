@@ -6,9 +6,9 @@ class BalancedBrackets {
 
     private final Deque<Character> stack = new ArrayDeque<>();
     private final Map<Character, Character> bracketMap = Map.of(
-        '(', ')',
-        '[', ']',
-        '{', '}');
+            '(', ')',
+            '[', ']',
+            '{', '}');
 
     public Boolean isBalanced(String brackets) {
         for (char c : brackets.toCharArray()) {
@@ -18,11 +18,11 @@ class BalancedBrackets {
                 return false;
         }
 
-        return stack.isEmpty() ? true : false;
+        return stack.isEmpty();
     }
 
     private Boolean isOpeningBracket(Character chr) {
-        return bracketMap.containsKey(chr) ? true : false;
+        return bracketMap.containsKey(chr);
     }
 
 }
