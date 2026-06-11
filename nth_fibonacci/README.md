@@ -28,7 +28,7 @@ given time. That only determines the space complexity as the recursive solution 
 auxiliary storage. We'll have at most `n` frames on the callstack. Beyond that, we'll start hitting
 base cases, popping calls from the stack going back up. We'd still push frames on the stack as we go
 back up to `fib(n)` but the number of frames will never exceed `n`. And `n` corresponds to the
-height of the tree. There will be n levels at most.
+height of the tree. There will be `n` levels at most.
 
 ### Memoization
 
