@@ -24,9 +24,9 @@ expected_output = [3, 3]
 
 ## Time & Space complexity
 
-$O(n + m)$ time and $O(1)$ space where n is the length of the matrix's rows and m is the length of
-the matrix's columns.
+$O(n + m)$ time and $O(1)$ space where n is the length of the matrix rows and m is the length of the
+columns.
 
 <br>
 
-Topic: [#Searching]()
+Topic: [#Searching](), [#Matrix]()
