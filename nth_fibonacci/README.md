@@ -12,7 +12,7 @@ Fib(6) = 5 // 0, 1, 1, 2, 3, 5
 
 ## Time & Space Complexity
 
-### Recursive
+### Recursive (Top-Down)
 
 Implementation almost the same as the mathematical formula. A naive solution. Does a lot of
 recalculation. Stuff can instead be memoized. Exponential time complexity $O(2^n)$. For `fib(n)`, we
@@ -30,7 +30,7 @@ base cases, popping calls from the stack going back up. We'd still push frames o
 back up to `fib(n)` but the number of frames will never exceed `n`. And `n` corresponds to the
 height of the tree. There will be `n` levels at most.
 
-### Memoization
+### Memoization (Top-Down)
 
 Time complexity becomes $O(n)$ because calculating `fib(n)` reduces to only `fib(n - 1)`.
 `fib(n - 2)` will become constant time as it will be found in the memoization. In other words, right
@@ -43,9 +43,9 @@ Space complexity remains the same $O(n)$. The callstack aspect is same as above 
 be at most `n` frames on the callstack. Apart from that we'll be using a hash with max `n` size for
 the memoization and so in total it will be $O(n)$.
 
-### Iterative
+### Iterative (Bottom-Up)
 
 Keeps the last two fib numbers as it goes up to `n`. Auxiliary storage is an array of size 2. Time
 complexity $O(n)$ and space complexity $O(1)$.
 
-Topic: [#Dynamic Programming]()
+Topic: [#Recursion](), [#Dynamic Programming]()
